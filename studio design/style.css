@@ -1,0 +1,286 @@
+:root{
+    --grey-bg: #e9eae2;
+    --green-header:#7acec3;
+    --orange-project: #f8c255;
+    --red-likes: #ff0000;
+    --grey-bg-potter: #dfe0d9;
+}
+
+* {
+    box-sizing: border-box;
+  }
+
+body{
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.grid-container{
+    display: grid; 
+    grid-template-areas:
+    'header_caption header_caption header_menu'
+    'projects_menu project_fondue project_potter'
+    'projects_menu project_fondue project_fiji';
+    grid-template-columns: 0.9fr 1.1fr 0.9fr;
+    grid-template-rows: 450px 225px 225px;
+   
+}
+
+.header-caption{
+    grid-area: header_caption;
+    padding: 6% 20%;
+    background: var(--grey-bg) url(img/chairs-hd.png) no-repeat right;
+    background-size: 100%;
+}
+
+.caption{
+    display: flex;
+    flex-direction: column;
+    width: 145px;
+}
+
+.caption__icon{
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+.caption__name{
+    margin: -2% 0;
+    font-size: 1em;
+    letter-spacing: -1px; 
+    font-weight: 400;
+    line-height: 1.1em;
+}
+
+.caption__social-icon{
+    margin-top: 33%;
+    align-self: center;
+}
+
+.social-icon__item{
+    margin-right: 8px;
+}
+
+.header-menu{
+    grid-area: header_menu;
+    background-color: var(--green-header);
+}
+
+.menu{
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 0.7em;
+  line-height: 1.2em;
+}
+
+.menu__button{
+    display: block;
+    border: 3px solid var(--grey-bg);
+}
+
+.button{
+    cursor: pointer;
+    outline: none;
+    margin: 45px auto 0;
+    background-color: var(--green);
+    width: 115px;
+    height: 110px;
+}
+
+.menu__links{
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.menu__address{
+    margin: 20% 13% 0;
+}
+
+.menu__contacts{
+    margin: 10% 29% 0;
+}
+
+.projects-menu{
+    grid-area: projects_menu;
+    background-color:  var(--orange-project);
+}
+
+.projects-menu__nav{
+    display: flex;
+    align-items: flex-start;
+    margin: 34% 28% 0;
+}
+
+.projects-menu__title{
+    margin: 12% 46%;
+    font-weight: 400;
+    letter-spacing: -1px; 
+    font-size: 3.7em;
+}
+
+.nav__list {
+    display: inline-block;
+    list-style-type: none;
+    padding: 0; 
+}
+
+.nav-list__li{
+  margin-bottom: 2px;
+} 
+
+.nav-list__li_active{
+    color: #000000;
+}
+
+.nav__icon{
+    margin: 8px 10px 0 0;
+}
+
+.project__discription{
+    letter-spacing: -1px;
+}
+
+.project-fondue { 
+    grid-area: project_fondue; 
+    background: url(./img/lamp.png) no-repeat top right;
+    background-size: contain;
+    padding: 10% 18%;
+}
+
+.project__title{
+    font-size: 1.4em;
+    font-weight: 400;
+    letter-spacing: -2px;
+    margin-bottom: 10px;
+}
+
+.project__text{
+    font-size: 0.7em;
+    line-height: 1.1em;
+}
+
+.project-fondue__view{
+    margin-top: 20%;
+}
+
+.project__arrow{
+    margin-right: 6px;
+}
+
+.project-fondue__likes{
+    margin: 31% 17%;
+}
+
+.likes__img{
+    width:25px;
+}
+
+.likes__num{
+    display: block;
+    font-size: 0.7em;
+    color: var(--red-likes);
+}
+
+.project-potter {
+    grid-area: project_potter;
+    background: var(--grey-bg-potter) url(./img/potter-bg.png) right no-repeat;
+    background-size: 65%;
+    padding: 2% 9%;
+}
+
+.project-potter__description{
+    display: block;
+    width: 40%;
+    text-transform: none;
+}
+
+.project-potter__likes{
+    margin: 4% 15%; 
+}
+
+.project-fiji {
+    grid-area: project_fiji;
+    background: url(./img/chair-pj.png) no-repeat 0% 70px;
+    background-size: 75%;
+    padding: 5% 0 0 60%;
+}
+
+.project-fiji__likes{
+    margin: 10% 30%;
+}
+@media all and (min-width: 1441px){
+    body{
+        font-size: 30px;
+    }
+    .grid-container{
+        grid-template-rows: 900px 450px 450px;
+    }
+    .caption{
+        width:290px;
+    }
+
+    .social-icon__img{
+        width: 40px;
+        height: 40px;
+    }
+}
+
+@media all and (max-width: 1000px){
+    .grid-container{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(3, 400px);
+        grid-template-areas:
+        'header_caption header_menu'
+        'projects_menu project_fondue'
+        'project_potter project_fiji';
+    }
+
+    .project-potter{
+        padding: 10% 18%;
+    }
+
+    .project-fiji{
+        padding: 10% 0 0 50%;
+    }
+    
+    .project-fondue__view{
+        margin: 0;
+    }
+
+    .project-fondue__likes, .project-potter__likes, .project-fiji__likes{
+        margin: 10% 0;
+    }
+}
+
+@media all and (max-width: 650px){
+    .grid-container{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6,430px);
+        grid-template-areas:
+        'header_caption'
+        'header_menu'
+        'projects_menu'
+        'project_fondue'
+        'project_potter'
+        'project_fiji';
+    }
+
+    .project-potter{
+        padding: 10% 18%;
+    }
+
+    .project-fiji{
+        padding: 10% 0 0 60%;
+    }
+
+    .project-fondue__view{
+        margin: 0;
+    }
+
+    .project-fondue__likes, .project-potter__likes, .project-fiji__likes{
+        margin: 10% 0;
+    }
+}
