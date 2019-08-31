@@ -1,0 +1,217 @@
+:root {
+  --grey: rgba(0, 0, 0, 0.4);
+  --red: #ea625c;
+  --red-hover: #cf5751;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.main-page {
+  font-family: "Roboto", sans-serif;
+}
+
+.header {
+  width: 850px;
+  margin: 0 auto;
+  height: 78px;
+  position: relative;
+}
+
+.header__logo {
+  position: absolute;
+  bottom: -13px;
+  left: 2px;
+  width: 25px;
+}
+
+.header__nav-search {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.nav-search__nav,
+.nav-search__search {
+  display: inline-block;
+}
+
+.nav__list {
+  list-style-type: none;
+}
+
+.nav-list__li {
+  float: left;
+  display: block;
+  padding-right: 33px;
+}
+
+.nav-list__text {
+  vertical-align: 3px;
+  color: var(--grey);
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 10px 0;
+  transition: 0.3s;
+}
+
+.nav-list__text:hover {
+  color: #000000;
+  border-bottom: 2px solid #000000;
+}
+
+.search__field {
+  vertical-align: 7px;
+  border: none;
+  border-bottom: 1px solid var(--grey);
+  width: 140px;
+  font-size: 13px;
+  font-weight: 700;
+  padding: 3px 0;
+  outline: none;
+  font-family: "Roboto", sans-serif;
+  transition: 0.3s;
+}
+
+.search__field:focus {
+  border-bottom: 1px solid #000000;
+}
+
+.calls-section {
+  height: 605px;
+  background: url(../img/watches.jpg) no-repeat;
+  background-position: calc(100% + 266px) 25px;
+  background-size: 600px;
+  border-bottom: 1px solid #ccc;
+}
+
+.calls-section__content {
+  width: 845px;
+  margin: 0 auto;
+  padding-top: 136px;
+}
+
+.content__caption {
+  width: 350px;
+  font-size: 28pt;
+  line-height: 34pt;
+  margin: 0 0 44px;
+}
+
+.content__text {
+  padding: 2px 0 2px 28px;
+  border-left: 2px solid var(--grey);
+  width: 375px;
+  font-size: 12px;
+  color: var(--grey);
+  font-weight: 700;
+  line-height: 19px;
+}
+
+.content__button {
+  margin-top: 23px;
+  text-transform: uppercase;
+  color: white;
+  font-size: 11px;
+  font-weight: 700;
+  background-color: var(--red);
+  border: none;
+  outline: none;
+  padding: 11px 20px;
+  cursor: pointer;
+}
+
+.content__button:hover {
+  background-color: var(--red-hover);
+}
+
+.run-section {
+  width: 845px;
+  margin: 28px auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.small-article {
+  width: 27.5%;
+}
+
+.small-article__caption {
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 39px;
+}
+
+.small-article__text {
+  font-size: 12px;
+  color: var(--grey);
+  font-weight: 700;
+  line-height: 192%;
+  margin-bottom: 0;
+}
+
+.dots {
+  display: inline-block;
+  margin-right: 6px;
+  height: 4px;
+  width: 4px;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.small-article__learn-more {
+  cursor: pointer;
+  margin-top: 10px;
+  text-transform: uppercase;
+  color: var(--red);
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.learn-more__line {
+  display: inline-block;
+  width: 28px;
+  height: 2px;
+  background-color: var(--red);
+  margin-right: 10px;
+  vertical-align: middle;
+  transition: 0.3s;
+}
+
+.small-article__learn-more:hover .learn-more__line {
+  width: 38px;
+}
+
+.main__nike-band-section {
+  width: 845px;
+  margin: 75px auto 45px;
+  align-items: center;
+}
+
+.nike-band-section__information {
+  display: inline-block;
+  width: 40%;
+}
+
+.nike-band-section__img {
+  width: 375px;
+}
+
+.sport-section {
+  height: 630px;
+  background: url(../img/runners.jpg) no-repeat 0 -110px;
+  background-size: cover;
+}
+
+.sport-section__content {
+  margin-top: 50px;
+  float: right;
+  color: white;
+}
+
+.sport-section__text {
+  color: white;
+  border-color: white;
+}
