@@ -87,6 +87,7 @@ body {
     align-content: center;
     justify-content: center;
     margin-top: 15px;
+    cursor: pointer;
 }
 
 .main {
@@ -253,6 +254,77 @@ body {
 .payment-nav,
 .footer__footer-nav,
 .footer__img-company {
+    display: none;
+}
+
+.enter-window {
+    z-index: 3;
+    position: fixed;
+    margin: 10% auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    background: white;
+    width: 402px;
+    height: 477px;
+    padding: 20px 37px;
+    display: none;
+}
+
+.enter-window__caption {
+    padding-left: 3px;
+}
+
+.enter-window__input {
+    width: 324px;
+    height: 60px;
+    margin-top: 19px;
+}
+
+.enter-window__text {
+    -webkit-box-shadow: inset 1px 1px 2px 0px rgba(0, 0, 0, 0.6);
+    -moz-box-shadow: inset 1px 1px 2px 0px rgba(0, 0, 0, 0.6);
+    box-shadow: inset 1px 1px 2px 0px rgba(0, 0, 0, 0.6);
+    padding-left: 19px;
+    font-size: 1.25em;
+}
+
+.enter-window__enter {
+    background-color: var(--red);
+    color: white;
+    font-size: 1.4em;
+    margin-bottom: 9px;
+}
+
+.enter-window__link {
+    display: inline-block;
+    margin: 27px 3px 0;
+    border-bottom: 2px dotted var(--blue);
+    color: var(--blue);
+    text-decoration: none;
+}
+
+.enter-window__cancel-btn {
+    position: absolute;
+    width: 23px;
+    height: 23px;
+    background-color: initial;
+    background: url(./img/close-enter.svg) no-repeat;
+    background-size: cover;
+    border: none;
+    top: 4px;
+    right: -43px;
+}
+
+.overlay {
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0.6);
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    cursor: pointer;
     display: none;
 }
 
@@ -482,7 +554,7 @@ body {
     }
 
     .content__img,
-    .footer__text-br,  
+    .footer__text-br,
     .footer__footer-nav {
         display: block;
     }
