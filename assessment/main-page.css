@@ -1,0 +1,442 @@
+* {
+    box-sizing: border-box;
+}
+
+.evaluation-main--mobile,
+.table--mobile,
+.table-text--mobile {
+    display: none;
+}
+
+.header {
+    padding: 20px 8% 0;
+    background: url(./img/jpeg/bg.jpg) no-repeat;
+    background-size: cover;
+}
+
+.header-main {
+    display: flex;
+    justify-content: space-between;
+    height: 81%;
+}
+
+.header-discreption {
+    margin-top: 30px;
+}
+
+.header-main__img-bg {
+    margin-right: 8%;
+}
+
+.header-discreption__caption {
+    font-size: 2.4em;
+    letter-spacing: 1px;
+    margin-bottom: 45px;
+}
+
+.header-discreption__text {
+    margin: 0 0 26px;
+}
+
+.evaluation {
+    height: 825px;
+    text-align: center;
+    padding-bottom: 80px;
+}
+
+.section-caption {
+    font-size: 2em;
+    padding: 90px 0 18px;
+    margin: 0;
+}
+
+.evaluation-nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 70%;
+    margin: 25px auto;
+}
+
+.evaluation-nav__btn {
+    font-family: 'Gilroy';
+    min-width: 145px;
+    font-weight: 300;
+    cursor: pointer;
+    color: var(--blue);
+    background-color: white;
+    border-radius: 9px;
+    font-size: 0.8em;
+    border: 1px solid var(--blue);
+    padding: 7px 1em;
+    margin: 13px 5px;
+    outline: 0 none !important;
+    transition: 0.3s ease-in-out;
+}
+
+.evaluation-nav__btn:hover {
+    background-color: var(--light-blue);
+    -webkit-box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 2px 2px 2px 0pxrgba(0, 0, 0, 0.1);
+    box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.1);
+}
+
+.evaliation-main__block {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    visibility: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 890px;
+}
+
+.active {
+    visibility: visible;
+}
+
+.evaliation-main__item {
+    text-decoration: none;
+    margin: 0 40px 40px;
+}
+
+.item__img {
+    height: 150px;
+    opacity: 0.6;
+}
+
+.evaliation-main__item:hover .item__img {
+    opacity: 1;
+}
+
+.item__caption {
+    max-width: 300px;
+    font-weight: 800;
+    color: var(--dark-grey);
+    font-size: 0.8em;
+}
+
+.prices {
+    background-color: var(--light-grey);
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+table {
+    border-collapse: collapse;
+    margin: 40px auto;
+}
+
+table,
+th,
+td {
+    border: 1px solid black;
+    font-size: 16px;
+    color: #525757;
+    border-color: #525757;
+    padding: 10px 5px;
+}
+
+.tg-kbid {
+    font-weight: 600;
+}
+
+.standarts {
+    padding: 93px 95px 0 14.5%;
+    margin: 0 auto;
+}
+
+.benefits {
+    padding: 37px 175px 30px 14.5%;
+    margin: 0 auto;
+}
+
+.standarts__caption {
+    font-size: 2em;
+    margin-top: 0;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.standarts__line {
+    margin: 0 0 15px;
+}
+
+.standarts__text {
+    font-size: 1.1em;
+    line-height: 26px;
+    margin: 25px 0;
+}
+
+.standarts__list {
+    margin: 0;
+    padding: 0;
+}
+
+.benefits__caption {
+    margin: 0 0 20px;
+    font-size: 2em;
+}
+
+.benefits__main {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.benefits-item {
+    display: flex;
+    align-items: center;
+    width: 50%;
+    margin: 13px 0 83px;
+}
+
+.benefits-item__img {
+    margin-right: 18px;
+}
+
+.benefits-item__text {
+    margin-top: 5px;
+    font-size: 0.85em;
+    width: 80%;
+}
+
+.benefits-item__caption {
+    font-weight: 300;
+    margin-bottom: 5px;
+}
+
+.benefits-item:first-child .benefits-item__caption {
+    font-size: 1.15em;
+}
+
+.accreditation {
+    position: relative;
+    height: 100%;
+    text-align: center;
+}
+
+.accreditation__caption {
+    padding: 70px 0 42px;
+}
+
+.accreditation__bg {
+    position: absolute;
+    z-index: -1;
+    background-color: var(--light-blue);
+    height: 86%;
+    width: 100%;
+}
+
+.accreditation__scan {
+    width: 508px;
+    z-index: 3;
+    -webkit-box-shadow: 5px 7px 7px 0px rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: 5px 7px 7px 0px rgba(0, 0, 0, 0.4);
+    box-shadow: 5px 7px 7px 0px rgba(0, 0, 0, 0.4);
+}
+
+
+@media all and (max-width: 1024px) {
+
+    .standarts__img,
+    .header-main__img-bg {
+        display: none;
+    }
+
+    .header {
+        padding: 20px 0 0 6% ;
+        padding-right: 0;
+    }
+
+    .header-main {
+        background: url(./img/jpeg/photo_nekrasova.png) no-repeat 100% 100%;
+        background-size: 35%;
+    }
+
+    .header-discreption__text {
+        margin: 20px 0;
+        width: 50%;
+    }
+
+    .header-discreption__caption {
+        font-size: 2.1em;
+        width: 92%;
+        margin: 40px 0;
+    }
+
+    .evaluation {
+        height: 680px;
+    }
+
+    .evaluation-nav__btn {
+        margin: 6px 3px;
+        font-size: 0.8em;
+        min-width: 120px;
+    }
+
+    .section-caption,
+    .standarts__caption,
+    .benefits__caption {
+        font-size: 1.5em;
+    }
+
+    .section-caption {
+        padding-top: 25px;
+    }
+
+    .evaliation-main__block {
+        width: 95%;
+    }
+
+    .item__img {
+        height: 100px;
+    }
+
+    .item__caption {
+        max-width: 250px;
+    }
+
+    .footer__menu {
+        width: 78%;
+        margin: 40px 0 0 6%;
+    }
+
+    table {
+        margin: 30px 62px;
+    }
+
+    .benefits,
+    .standarts {
+        padding-top: 40px;
+        padding-left: 6%;
+        padding-right: 9%;
+    }
+
+    .footer__containers>.header-discreption__text {
+        width: 100%;
+    }
+}
+
+@media all and (max-width: 682px) {
+    .header-main {
+        background-size: 50%;
+    }
+    
+    .header {
+        padding-top: 0;
+    }
+
+    .evaluation {
+        height: 840px;
+    }
+
+    .evaluation-nav {
+        width: 95%;
+    }
+
+    table {
+        margin: 30px auto;
+        width: 95%;
+    }
+
+    .evaliation-main__item {
+        text-decoration: none;
+        margin: 0 20px 40px;
+    }
+
+    .standarts__text {
+        font-size: 1em;
+    }
+
+    .benefits-item {
+        width: 100%;
+        margin: 20px auto;
+    }
+
+    .benefits-item__text {
+        width: 100%;
+        margin-bottom: 0;
+    }
+}
+
+@media all and (max-width: 495px) {
+    .header-main {
+        background: url(./img/jpeg/photo_nekrasova.png) no-repeat 120% 100%;
+        background-size: 60%;
+    }
+
+    .header-main {
+        height: 500px;
+    }
+
+    .header-discreption__text {
+        margin: 10px 0;
+        width: 48%;
+        font-size: 0.9em;
+    }
+
+    .header-discreption>p:nth-child(2) {
+        width: 76%;
+    }
+
+    .header-discreption__caption {
+        font-size: 1.6em;
+        margin: 40px 0 25px;
+        width: 95%;
+    }
+
+    .evaluation-nav,
+    .evaliation-main,
+    .table--desktop {
+        display: none;
+    }
+
+    .table--mobile {
+        display: table;
+    }
+
+    table,
+    td,
+    tr {
+        font-size: 16px;
+        padding: 0;
+    }
+
+    .table-text--mobile {
+        display: block;
+        font-size: 0.8em;
+        text-align: start;
+        margin-left: 12px;
+    }
+
+    .standarts__text,
+    .benefits-item__text {
+        font-size: 0.8em;
+    }
+
+    .accreditation__scan {
+        width: 320px;
+        margin-bottom: 40px;
+    }
+
+    .evaluation {
+        height: 460px;
+        padding: 0 10px;
+    }
+
+    .evaluation-main--mobile {
+        display: block;
+        list-style: none;
+        font-size: 0.9em;
+        padding: 30px 0 0;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .nested__li {
+        padding: 7px 0;
+    }
+}
