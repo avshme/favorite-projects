@@ -342,6 +342,10 @@ td {
         width: 95%;
     }
 
+    .accreditation__scan {
+        width: 480px;
+    }
+
     .evaliation-main__item {
         text-decoration: none;
         margin: 0 20px 40px;
@@ -372,14 +376,18 @@ td {
         height: 500px;
     }
 
+    .header-discreption {
+       margin-top: 0;
+    }
+
     .header-discreption__text {
         margin: 10px 0;
-        width: 48%;
+        width: 49%;
         font-size: 0.9em;
     }
 
     .header-discreption>p:nth-child(2) {
-        width: 76%;
+        width: 60%;
     }
 
     .header-discreption__caption {
@@ -398,11 +406,10 @@ td {
         display: table;
     }
 
-    table,
     td,
     tr {
-        font-size: 16px;
         padding: 0;
+        height: 39px;
     }
 
     .table-text--mobile {
